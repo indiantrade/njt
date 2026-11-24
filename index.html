@@ -1,120 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Stock Advisor Group – Stock Market Education Community</title>
-<meta name="description" content="A free educational community to learn stock market basics, charts, Nifty, Bank Nifty and options concepts in simple language. Education only.">
-<style>
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%}
-body{min-height:100vh;background:radial-gradient(circle at 15% 0,#7b2ff7 0,transparent 45%),radial-gradient(circle at 90% 100%,#f107a3 0,transparent 45%),#1a0638;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#fff;display:flex;justify-content:center;padding:max(12px,env(safe-area-inset-top)) 12px max(12px,env(safe-area-inset-bottom))}
-.card{width:100%;max-width:440px;align-self:flex-start;border-radius:28px;padding:30px 14px 22px;text-align:center;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);box-shadow:0 12px 40px rgba(0,0,0,.35)}
-.avatar{width:116px;height:116px;border-radius:50%;object-fit:cover;background:#3b1a6e;box-shadow:0 0 0 4px #ffc93c,0 0 28px rgba(255,201,60,.55)}
-h1{margin-top:20px;font-size:clamp(26px,8vw,36px);line-height:1.15;font-weight:800}
-h1 span{display:block;background:linear-gradient(90deg,#ffd84d,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
-.sub{margin:14px 4px 18px;color:#eadcff;font-size:15px;line-height:1.6}
-.btn{display:block;min-height:56px;padding:17px 10px;border-radius:40px;background:linear-gradient(90deg,#ffd84d,#ff8a1f);color:#2a0b4d;font-weight:800;font-size:clamp(16px,4.8vw,19px);text-decoration:none;box-shadow:0 8px 24px rgba(255,170,40,.45)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:20px}
-.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:12px 2px}
-.stat b{display:block;color:#ffd84d;font-size:clamp(14px,4.4vw,18px)}
-.stat small{color:#dccaf7;font-size:12px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 18px}
-.item{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:14px 10px;font-weight:700;font-size:clamp(12px,3.6vw,14.5px);text-align:left;line-height:1.3}
-.item i{font-style:normal;font-size:22px}
-.box{margin:0 0 14px;text-align:left;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px 14px}
-.box h2{font-size:17px;color:#ffd84d;margin-bottom:10px;text-align:center}
-.box p{font-size:14px;line-height:1.65;color:#eadcff;margin-bottom:8px}
-.box dl dt{font-size:14px;font-weight:700;color:#fff;margin-top:10px}
-.box dl dd{font-size:13.5px;line-height:1.55;color:#dccaf7;margin-top:2px}
-.steps{list-style:none;counter-reset:s}
-.steps li{counter-increment:s;position:relative;font-size:14px;line-height:1.55;color:#fff;padding:9px 0 9px 36px;border-top:1px solid rgba(255,255,255,.12)}
-.steps li:first-child{border-top:0}
-.steps li:before{content:counter(s);position:absolute;left:0;top:9px;width:26px;height:26px;border-radius:50%;background:#ffd84d;color:#2a0b4d;font-weight:800;font-size:13px;text-align:center;line-height:26px}
-.note{border-color:rgba(255,216,77,.5)}
-.disc{margin-top:16px;color:#c9b6e6;font-size:12px;line-height:1.6}
-</style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '4668758756680641');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=4668758756680641&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Navjot Brar(Official) — Market Study & Chart Notes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-night: #060913;
+            --bg-elevated: #0d1324;
+            --border-subtle: rgba(148, 163, 184, 0.14);
+            --accent-cyan: #38bdf8;
+            --accent-indigo: #818cf8;
+            --accent-glow: rgba(56, 189, 248, 0.25);
+            --text-bright: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-night);
+            background-image:
+                linear-gradient(to bottom, rgba(56, 189, 248, 0.08), transparent 240px),
+                radial-gradient(ellipse 80% 45% at 50% -10%, rgba(129, 140, 248, 0.16), transparent);
+            color: var(--text-bright);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 15px 24px;
+            line-height: 1.5;
+        }
+
+        .frame {
+            width: 100%;
+            max-width: 430px;
+            margin: 0 auto;
+        }
+
+        .profile-surface {
+            background: linear-gradient(180deg, rgba(16, 24, 46, 0.92) 0%, rgba(10, 15, 29, 0.96) 100%);
+            border: 1px solid var(--border-subtle);
+            border-radius: 28px;
+            padding: 24px 20px 26px;
+            box-shadow: 0 24px 55px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        .top-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .category-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+            color: var(--accent-cyan);
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            padding: 5px 11px;
+            border-radius: 8px;
+        }
+
+        .mode-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 0.3px;
+        }
+
+        .identity-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .avatar-frame {
+            position: relative;
+            width: 94px;
+            height: 94px;
+            border-radius: 24px;
+            padding: 2.5px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
+            box-shadow: 0 12px 28px var(--accent-glow);
+            margin-bottom: 16px;
+        }
+
+        .avatar-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 21.5px;
+            display: block;
+            background-color: var(--bg-night);
+        }
+
+        .title-main {
+            font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+            margin-bottom: 6px;
+        }
+
+        .lead-copy {
+            font-size: 13.5px;
+            color: var(--text-dim);
+            max-width: 340px;
+            margin-bottom: 22px;
+        }
+
+        .primary-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 16px 20px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+            font-size: 15.5px;
+            font-weight: 700;
+            letter-spacing: 0.4px;
+            color: #050811;
+            background: linear-gradient(135deg, #38bdf8 0%, #7dd3fc 50%, #818cf8 100%);
+            box-shadow: 0 12px 28px rgba(56, 189, 248, 0.32);
+            border: 1px solid rgba(255, 255, 255, 0.35);
+            transition: transform 0.14s ease, box-shadow 0.14s ease;
+        }
+
+        .primary-cta:active {
+            transform: scale(0.98);
+        }
+
+        .primary-cta svg {
+            width: 21px;
+            height: 21px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+
+        .cta-subtext {
+            text-align: center;
+            font-size: 11.5px;
+            color: var(--text-dim);
+            margin-top: 10px;
+        }
+
+        .highlight-grid {
+            margin-top: 22px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .highlight-tile {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 14px;
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        .tile-num {
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            background: rgba(129, 140, 248, 0.16);
+            color: #a5b4fc;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .tile-text {
+            font-size: 13px;
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        .disclaimer-panel {
+            margin-top: 16px;
+            background: rgba(10, 15, 29, 0.82);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            border-radius: 16px;
+            padding: 14px 16px;
+            font-size: 10.5px;
+            color: #64748b;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .disclaimer-panel strong {
+            color: #94a3b8;
+        }
+
+        .bottom-meta {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .policy-row {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+        }
+
+        .policy-row button {
+            background: none;
+            border: none;
+            color: #94a3b8;
+            font-size: 12px;
+            text-decoration: underline;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .agency-badge {
+            font-size: 11.5px;
+            color: #64748b;
+        }
+
+        .agency-badge a {
+            color: var(--accent-cyan);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .agency-badge a:hover {
+            text-decoration: underline;
+        }
+
+        .dialog-backdrop {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(3, 6, 15, 0.88);
+            backdrop-filter: blur(8px);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .dialog-backdrop.is-open {
+            display: flex;
+        }
+
+        .dialog-card {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 20px;
+            max-width: 410px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 22px;
+            color: #e2e8f0;
+            font-size: 13px;
+        }
+
+        .dialog-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+        }
+
+        .dialog-head h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .dialog-close {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .dialog-card p {
+            margin-bottom: 10px;
+            color: #cbd5e1;
+            line-height: 1.55;
+        }
+    </style>
 </head>
 <body>
-<main class="card">
-  <img class="avatar" src="https://iili.io/oKVlEEG.jpg" alt="Stock Advisor Group" width="116" height="116">
-  <h1>STOCK ADVISOR<span>GROUP ™</span></h1>
-  <p class="sub">Stock Market Education Community •<br>Learn Nifty, Bank Nifty &amp; Options Basics</p>
 
-  <a class="btn" href="https://t.me/+CAruIKtBE1dlZmRl" rel="noopener">🚀 JOIN TELEGRAM</a>
+    <main class="frame">
+        <section class="profile-surface">
+            <div class="top-meta">
+                <span class="category-tag">Market Education</span>
+                <span class="mode-label">Mobile Ready</span>
+            </div>
 
-  <div class="stats">
-    <div class="stat"><b>Free</b><small>Education</small></div>
-    <div class="stat"><b>Simple</b><small>Language</small></div>
-    <div class="stat"><b>Beginner</b><small>Friendly</small></div>
-  </div>
+            <div class="identity-block">
+                <div class="avatar-frame">
+                    <img src="https://iili.io/ofAlogI.jpg" alt="Navjot Brar(Official) Logo">
+                </div>
 
-  <div class="grid">
-    <div class="item"><i>📈</i>Nifty Basics</div>
-    <div class="item"><i>🏦</i>Bank Nifty Basics</div>
-    <div class="item"><i>💹</i>Options Basics</div>
-    <div class="item"><i>📊</i>Chart Reading</div>
-  </div>
+                <h1 class="title-main">Navjot Brar(Official)</h1>
+                <p class="lead-copy">Structured Chart Studies, Price Action Breakdowns &amp; Market Discipline Notes</p>
 
-  <section class="box">
-    <h2>About This Community</h2>
-    <p>This is a free learning space for students and beginners who want to understand how the Indian stock market works. Everything shared here is educational: concepts, explanations and examples, in simple language.</p>
-    <p>The goal is knowledge, not recommendations. Members learn to read charts, understand market terms and think about risk before anything else.</p>
-  </section>
+                <a href="https://t.me/+xoz08lbF2kE1YTI1" id="join-telegram-btn" class="primary-cta" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    <span>JOIN ON TELEGRAM</span>
+                </a>
+            </div>
 
-  <section class="box">
-    <h2>Your Learning Path</h2>
-    <ol class="steps">
-      <li><b>Market Basics:</b> what shares, NSE, BSE and indices are</li>
-      <li><b>Index Concepts:</b> how Nifty 50 and Bank Nifty are made</li>
-      <li><b>Chart Reading:</b> candlesticks, trends, support and resistance</li>
-      <li><b>Options Basics:</b> call, put, strike price, expiry and premium</li>
-      <li><b>Risk Awareness:</b> stop-loss, position size and capital protection</li>
-      <li><b>Mindset:</b> patience, discipline and emotional control</li>
-    </ol>
-  </section>
+            <p class="cta-subtext">Free Educational Channel &bull; No Paid Advisory</p>
 
-  <section class="box">
-    <h2>Key Terms Explained</h2>
-    <dl>
-      <dt>Nifty 50</dt>
-      <dd>An index of 50 large companies listed on the NSE. It shows the overall direction of the Indian market.</dd>
-      <dt>Bank Nifty</dt>
-      <dd>An index made up of major banking stocks. It reflects how the banking sector is moving.</dd>
-      <dt>Candlestick</dt>
-      <dd>A chart symbol that shows the open, high, low and close price for a time period.</dd>
-      <dt>Support &amp; Resistance</dt>
-      <dd>Price levels where a market has often paused or turned in the past.</dd>
-      <dt>Option</dt>
-      <dd>A contract linked to an underlying asset. It comes with a strike price and an expiry date.</dd>
-      <dt>Stop-loss</dt>
-      <dd>A risk-control concept that limits how much loss one is willing to accept on a position.</dd>
-    </dl>
-  </section>
+            <div class="highlight-grid">
+                <div class="highlight-tile">
+                    <span class="tile-num">01</span>
+                    <span class="tile-text">Daily Chart Structure &amp; Key Price Zone Reviews</span>
+                </div>
+                <div class="highlight-tile">
+                    <span class="tile-num">02</span>
+                    <span class="tile-text">Risk Allocation, Stop-Loss Planning &amp; Patience</span>
+                </div>
+                <div class="highlight-tile">
+                    <span class="tile-num">03</span>
+                    <span class="tile-text">Clear Learning Notes Built for Everyday Study</span>
+                </div>
+            </div>
+        </section>
 
-  <section class="box note">
-    <h2>Please Note</h2>
-    <p>This channel shares educational content only. We do not offer buy or sell recommendations, and we do not manage anyone's money. Market learning needs time, practice and patience.</p>
-  </section>
+        <section class="disclaimer-panel">
+            <strong>Educational Disclaimer:</strong> Navjot Brar(Official) exists solely for educational and informational learning around market charts and trading concepts. We are <strong>not SEBI-registered</strong> investment advisors or research analysts. Content shared on Telegram does not represent buy/sell recommendations, financial advice, or guaranteed returns. Trading involves financial risk; consult a qualified advisor before taking market positions.
+        </section>
 
-  <p class="disc">For educational and informational purposes only. Not investment advice. Past performance does not indicate future results, and we do not guarantee any returns. Investments in the securities market are subject to market risks; please consult a SEBI-registered advisor before making any investment decisions.</p>
-</main>
+        <footer class="bottom-meta">
+            <div class="policy-row">
+                <button type="button" onclick="openDialog('privacyDialog')">Privacy Policy</button>
+                <button type="button" onclick="openDialog('termsDialog')">Terms of Service</button>
+            </div>
+            <div class="agency-badge">
+                Promoted By <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank" rel="noopener noreferrer">AD BUILD AGENCY</a>
+            </div>
+        </footer>
+    </main>
+
+    <div id="privacyDialog" class="dialog-backdrop" onclick="closeOnBackdrop(event, 'privacyDialog')">
+        <div class="dialog-card">
+            <div class="dialog-head">
+                <h3>Privacy Policy</h3>
+                <button type="button" class="dialog-close" onclick="closeDialog('privacyDialog')">&times;</button>
+            </div>
+            <p>This page does not collect or store personal contact information such as names, phone numbers, or email addresses.</p>
+            <p>Tapping the Telegram button opens Telegram, whose own privacy policy governs your activity there.</p>
+        </div>
+    </div>
+
+    <div id="termsDialog" class="dialog-backdrop" onclick="closeOnBackdrop(event, 'termsDialog')">
+        <div class="dialog-card">
+            <div class="dialog-head">
+                <h3>Terms of Service</h3>
+                <button type="button" class="dialog-close" onclick="closeDialog('termsDialog')">&times;</button>
+            </div>
+            <p>All educational posts and market notes by Navjot Brar(Official) are provided strictly for learning purposes.</p>
+            <p>You remain solely responsible for your own trading choices and risk management.</p>
+        </div>
+    </div>
+
+    <script>
+        function openDialog(id) {
+            document.getElementById(id).classList.add('is-open');
+        }
+        function closeDialog(id) {
+            document.getElementById(id).classList.remove('is-open');
+        }
+        function closeOnBackdrop(event, id) {
+            if (event.target.id === id) {
+                closeDialog(id);
+            }
+        }
+    </script>
 </body>
+  
 </html>
